@@ -1,0 +1,126 @@
+{
+  "restaurant": {
+    "name": "Piazza Verde",
+    "currency": "USD",
+    "tax_rate": 0.08875,
+    "pickup_eta_minutes": 25
+  },
+  "categories": [
+    {
+      "name": "Pizza",
+      "items": [
+        {
+          "id": "margherita",
+          "name": "Margherita Pizza",
+          "description": "Tomato, fresh mozzarella, basil, olive oil",
+          "price": 14.5,
+          "modifiers": ["extra cheese", "gluten-free crust", "well done", "no basil"]
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni Pizza",
+          "description": "Tomato, mozzarella, pepperoni",
+          "price": 16,
+          "modifiers": ["extra pepperoni", "extra cheese", "gluten-free crust", "well done"]
+        },
+        {
+          "id": "funghi",
+          "name": "Funghi Pizza",
+          "description": "Mushrooms, mozzarella, thyme, garlic cream",
+          "price": 17,
+          "modifiers": ["extra mushrooms", "gluten-free crust", "no garlic", "well done"]
+        },
+        {
+          "id": "spicy_soppressata",
+          "name": "Spicy Soppressata Pizza",
+          "description": "Tomato, mozzarella, soppressata, chili honey",
+          "price": 18.5,
+          "modifiers": ["extra chili honey", "no honey", "gluten-free crust", "well done"]
+        }
+      ]
+    },
+    {
+      "name": "Pasta",
+      "items": [
+        {
+          "id": "rigatoni_vodka",
+          "name": "Rigatoni Vodka",
+          "description": "Tomato cream sauce, parmesan, basil",
+          "price": 15.5,
+          "modifiers": ["add chicken", "add sausage", "extra sauce", "no parmesan"]
+        },
+        {
+          "id": "cacio_pepe",
+          "name": "Cacio e Pepe",
+          "description": "Pecorino, black pepper, spaghetti",
+          "price": 14,
+          "modifiers": ["extra pepper", "extra pecorino", "add chicken"]
+        },
+        {
+          "id": "pesto_gnocchi",
+          "name": "Pesto Gnocchi",
+          "description": "Basil pesto, potato gnocchi, toasted pine nuts",
+          "price": 16.5,
+          "modifiers": ["no pine nuts", "extra pesto", "add chicken"]
+        }
+      ]
+    },
+    {
+      "name": "Salads",
+      "items": [
+        {
+          "id": "caesar",
+          "name": "Caesar Salad",
+          "description": "Romaine, parmesan, focaccia croutons",
+          "price": 10.5,
+          "modifiers": ["add chicken", "dressing on side", "no croutons"]
+        },
+        {
+          "id": "arugula",
+          "name": "Arugula Salad",
+          "description": "Arugula, lemon vinaigrette, shaved parmesan",
+          "price": 11,
+          "modifiers": ["dressing on side", "no parmesan", "add chicken"]
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {
+          "id": "garlic_knots",
+          "name": "Garlic Knots",
+          "description": "Six knots with marinara",
+          "price": 7,
+          "modifiers": ["extra marinara", "no parmesan"]
+        },
+        {
+          "id": "meatballs",
+          "name": "Meatballs",
+          "description": "Three beef and pork meatballs with tomato sauce",
+          "price": 9.5,
+          "modifiers": ["extra sauce", "no parmesan"]
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "sparkling_water",
+          "name": "Sparkling Water",
+          "description": "500 ml bottle",
+          "price": 4,
+          "modifiers": []
+        },
+        {
+          "id": "blood_orange_soda",
+          "name": "Blood Orange Soda",
+          "description": "Italian soda",
+          "price": 4.5,
+          "modifiers": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Piazza Verde Chat</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-pane" aria-label="Ordering chat">
+        <header class="chat-header">
+          <div class="brand-mark">PV</div>
+          <div>
+            <p class="eyebrow">Piazza Verde</p>
+            <h1>Pickup Ordering</h1>
+          </div>
+          <button id="resetButton" class="icon-button" type="button" title="Reset chat" aria-label="Reset chat">
+            <span aria-hidden="true">↻</span>
+          </button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="composer">
+          <input id="messageInput" name="message" type="text" autocomplete="off" placeholder="Message Piazza Verde" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="side-pane" aria-label="Order details">
+        <section class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Current Order</p>
+            <strong id="stageLabel">Browsing</strong>
+          </div>
+          <div id="cartLines" class="cart-lines"></div>
+          <dl class="totals">
+            <div>
+              <dt>Subtotal</dt>
+              <dd id="subtotal">$0.00</dd>
+            </div>
+            <div>
+              <dt>Tax</dt>
+              <dd id="tax">$0.00</dd>
+            </div>
+            <div class="total-row">
+              <dt>Total</dt>
+              <dd id="total">$0.00</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Menu</p>
+            <strong>Sample Italian</strong>
+          </div>
+          <div id="menuList" class="menu-list"></div>
+        </section>
+
+        <section id="orderJsonPanel" class="panel hidden">
+          <div class="panel-heading">
+            <p class="eyebrow">Final JSON</p>
+            <strong>Local demo</strong>
+          </div>
+          <pre id="orderJson"></pre>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module" src="/assets/app.js"></script>
+  </body>
+</html>
